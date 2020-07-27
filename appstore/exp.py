@@ -3,11 +3,11 @@ from pwn import *
 context(terminal = ['deepin-terminal','-x','sh','-c'],log_level = 'debug',arch = 'i386',os = 'linux')
 
 
-debug = 1
+debug = 0
 ElfPath = './applestore'
 LibcPath = './libc_32.so.6'
 RemoteAddr = 'chall.pwnable.tw'
-RemotePort = '10103'
+RemotePort = '10104'
 
 elf = ELF(ElfPath)
 if debug:
